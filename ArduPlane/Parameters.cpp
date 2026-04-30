@@ -8,7 +8,17 @@
  */
 
 const AP_Param::Info Plane::var_info[] = {
-    // @Param: FORMAT_VERSION
+    
+// @Param: AIRDROP_CMD
+    // @DisplayName: Airdrop Command State
+    // @Description: Defines the current state of the airdrop sequence. 0=Idle, 1=Person Drop, 2=Tent Drop, 3=Abort.
+    // @Values: 0:Idle, 1:Person, 2:Tent, 3:Abort
+    // @User: Standard
+    // Custom CUAir Parameter
+    GSCALAR(airdrop_cmd, "AIRDROP_CMD", 0),
+
+
+// @Param: FORMAT_VERSION
     // @DisplayName: Eeprom format version number
     // @Description: This value is incremented when changes are made to the eeprom format
     // @User: Advanced

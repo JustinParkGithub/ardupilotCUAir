@@ -212,6 +212,10 @@
  #define AP_PLANE_OFFBOARD_GUIDED_SLEW_ENABLED 1
 #endif
 
+#ifndef AIRDROP_CMD
+ # define AIRDROP_CMD      0     // default value for CUAir param
+#endif
+
 //////////////////////////////////////////////////////////////////////////////
 //  EKF Failsafe
 #ifndef FS_EKF_THRESHOLD_DEFAULT

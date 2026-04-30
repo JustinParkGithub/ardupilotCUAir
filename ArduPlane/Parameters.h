@@ -370,7 +370,9 @@ public:
         k_param_quicktune,
         k_param_mode_autoland,
         k_param__gcs,
-
+        
+        // CUAir Custom Parameters
+        k_param_airdrop_cmd,
     };
 
     AP_Int16 format_version;
@@ -433,6 +435,8 @@ public:
 
     // Misc
     //
+    AP_Int8  airdrop_cmd;       // CUAir Custom Parameter
+     
     AP_Int8 rudder_only;
     AP_Float mixing_gain;
     AP_Int16 mixing_offset;
